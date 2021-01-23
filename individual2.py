@@ -1,10 +1,10 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
 # 12. В списке, состоящем из вещественных элементов, вычислить:
 # 1) количество элементов списка, лежащих в диапазоне от А до В;
 # 2) сумму элементов списка, расположенных после максимального элемента.
 # Упорядочить элементы списка по убыванию модулей элементов.
-
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
 
 if __name__ == '__main__':
 
@@ -17,6 +17,6 @@ if __name__ == '__main__':
         if a < i < b:
             counter += 1
     print(counter)
-    print(sum(arr[arr.index(max(arr))+1 : ]))
+    print(sum(arr[arr.index(max(arr))+1:]))
     arr.sort(key=abs, reverse=True)
     print(arr)
