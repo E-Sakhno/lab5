@@ -12,11 +12,11 @@ if __name__ == '__main__':
     other = []
     for i in a:
         if i % 5 == 0:
-            five += [i]
+            five.append(i)
         elif i % 7 == 0:
-            seven += [i]
+            seven.append(i)
         else:
-            other += [i]
+            other.append(i)
     print(five, seven, other)
 
     five_lc = [i for i in a if not(i % 5)]
